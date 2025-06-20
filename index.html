@@ -1,0 +1,248 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Practice Java</title>
+</head>
+
+<body>
+    <div>
+        <h2>Multiplication Table Generator</h2>
+
+        <label for="number">Enter a number:</label>
+        <input type="number" id="number" placeholder="Type Your Table Number" />
+        <button onclick="printTable()">Show Table</button>
+
+        <span id="tableResult"></span>
+        <script src="script.js"></script>
+    </div>
+    <hr>
+    <div>
+        <h2>Radius functions Generator</h2>
+        <input type="number" id="display" placeholder="Type Your Circle Radius" />
+        <button onclick="displayhtml()">Calculate</button>
+        <p id="displayResult"></p>
+        <script src="script.js"></script>
+    </div>
+    <hr>
+    <div>
+        <h2>Comparing numbers</h2>
+
+        <input type="number" id="compareinput1" placeholder="Type Nukmber 1" />
+        <input type="number" id="compareinput2" placeholder="Type Nukmber 2" />
+        <button onclick="comparenumbers()">Compare</button>
+
+        <p id="compareResult"></p>
+        <script src="script.js"></script>
+    </div>
+    <hr>
+    <div>
+        <div>
+            <h2>Checking User Login</h2>
+            <form action="input">
+                <label for="username"> Username</label>
+                <input type="text" id="u1" placeholder="Type username">
+        </div><br>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="p1" placeholder="Type password">
+            <button onclick="checklogin()">Login</button>
+            </form>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <h2>Checking if a number is positive, negative or zero</h2>
+        <input type="number" id="digitcheck" placeholder="Enter a number">
+        <button onclick="signcheck()">Check</button>
+        <p id="checksign"></p>
+    </div>
+    <hr>
+    <div>
+        <h2>Get your Grade</h2>
+
+        <input type="number" id="obtainedmarks" placeholder="Write obtained marks" />
+        <input type="number" id="totalmarks" placeholder="Write total marks" />
+        <button onclick="getgrades()">Get Grade</button>
+
+        <p id="gradeprint"></p>
+        <script src="script.js"></script>
+    </div>
+    <hr>
+
+    <div>
+        <h2>Type 1 to 7 to get the name of the day</h2>
+
+        <input type="number" id="weekday" placeholder="Type number 1-7" />
+        <button onclick="dayname()">Calculate</button>
+
+        <p id="weekResult"></p>
+        <script src="script.js"></script>
+    </div>
+    <hr>
+
+    <div>
+        <h2>Factorial of 5</h2>
+        <button onclick="factorial5()">Factorial</button>
+        <p id="factorialResult"></p>
+        <script src="script.js"></script>
+    </div>
+    <hr>
+    <div>
+        <label for="number"> Enter first number</label>
+        <input type="number" max="99" min="-99" id="no1">
+    </div>
+    <select name="operator" id="operator">
+        <option value="add">Add</option>
+        <option value="subtract">Subtract</option>
+        <option value="Multiply">Multiply</option>
+        <option value="divide">divide</option>
+    </select>
+    <div>
+        <label for="number"> Enter second number</label>
+        <input type="number" mMultiplyax="99" min="-99" id="no2">
+    </div>
+    <div>
+        <button onclick="calculator()">Calculate</button>
+    </div>
+
+     <div>
+        <h2>User input untill 0</h2>
+        <input type="number" id="uinput" placeholder="Enter a number to start with" />
+        <button onclick="uinputhtml()">Calculate</button>
+        <p id="uinputResult"></p>
+        <script src="script.js"></script>
+     </div>
+
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice Tools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">JavaScript Practice Tools</h1>
+        
+        <div class="tool-card">
+            <h2>Multiplication Table Generator</h2>
+            <div class="input-group">
+                <label for="number">Enter a number:</label>
+                <input type="number" id="number" placeholder="Type Your Table Number">
+                <button onclick="printTable()">Show Table</button>
+            </div>
+            <div id="tableResult" class="result-box"></div>
+        </div>
+
+        <div class="tool-card">
+            <h2>Radius Functions Generator</h2>
+            <div class="input-group">
+                <input type="number" id="display" placeholder="Type Your Circle Radius">
+                <button onclick="displayhtml()">Calculate</button>
+            </div>
+            <div id="displayResult" class="result-box"></div>
+        </div>
+
+        <div class="tool-card">
+            <h2>Comparing Numbers</h2>
+            <div class="input-group">
+                <input type="number" id="compareinput1" placeholder="Type Number 1">
+                <input type="number" id="compareinput2" placeholder="Type Number 2">
+                <button onclick="comparenumbers()">Compare</button>
+            </div>
+            <div id="compareResult" class="result-box"></div>
+        </div>
+
+        <div class="tool-card">
+            <h2>User Login</h2>
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="u1">Username</label>
+                    <input type="text" id="u1" placeholder="Type username">
+                </div>
+                <div class="form-group">
+                    <label for="p1">Password</label>
+                    <input type="password" id="p1" placeholder="Type password">
+                </div>
+                <button type="button" onclick="checklogin()">Login</button>
+            </form>
+        </div>
+
+        <div class="tool-card">
+            <h2>Number Sign Check</h2>
+            <div class="input-group">
+                <input type="number" id="digitcheck" placeholder="Enter a number">
+                <button onclick="signcheck()">Check</button>
+            </div>
+            <div id="checksign" class="result-box"></div>
+        </div>
+
+        <div class="tool-card">
+            <h2>Grade Calculator</h2>
+            <div class="input-group">
+                <input type="number" id="obtainedmarks" placeholder="Obtained marks">
+                <input type="number" id="totalmarks" placeholder="Total marks">
+                <button onclick="getgrades()">Get Grade</button>
+            </div>
+            <div id="gradeprint" class="result-box"></div>
+        </div>
+
+        <div class="tool-card">
+            <h2>Day Name Generator</h2>
+            <div class="input-group">
+                <input type="number" id="weekday" placeholder="Type number 1-7" min="1" max="7">
+                <button onclick="dayname()">Get Day</button>
+            </div>
+            <div id="weekResult" class="result-box"></div>
+        </div>
+
+        <div class="tool-card">
+            <h2>Factorial Calculator</h2>
+            <div class="input-group">
+                <button onclick="factorial5()">Calculate 5!</button>
+            </div>
+            <div id="factorialResult" class="result-box"></div>
+        </div>
+
+        <div class="tool-card">
+            <h2>Basic Calculator</h2>
+            <div class="calculator">
+                <div class="form-group">
+                    <label for="no1">First number</label>
+                    <input type="number" id="no1" min="-99" max="99">
+                </div>
+                <div class="form-group">
+                    <select id="operator">
+                        <option value="add">Add (+)</option>
+                        <option value="subtract">Subtract (-)</option>
+                        <option value="Multiply">Multiply (×)</option>
+                        <option value="divide">Divide (÷)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="no2">Second number</label>
+                    <input type="number" id="no2" min="-99" max="99">
+                </div>
+                <button onclick="calculator()">Calculate</button>
+            </div>
+        </div>
+
+        <div class="tool-card">
+            <h2>User Input Until Zero</h2>
+            <div class="input-group">
+                <input type="number" id="uinput" placeholder="Enter a number">
+                <button onclick="uinputhtml()">Start</button>
+            </div>
+            <div id="uinputResult" class="result-box"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
