@@ -140,12 +140,36 @@ function factorial5() {
 }
 
 function calculate() {
-  let a= parseInt(document.getElementById("no1").value);
-  let b= parseInt(document.getElementById("no2").value);
-
+  let a = parseInt(document.getElementById("no1").value);
+  let b = parseInt(document.getElementById("no2").value);
+  let c = document.getElementById("operator").value;
+  let d = `<h4> Your answer is `;
+  if (c == "add") {
+    d += a + b
+  }
+  else if (c == "subtract") {
+    d += a - b
+  }
+  else if (c == "Multiply") {
+    d += a * b 
+  }
+  else {
+    d += (a / b).toFixed(3); 
+  }
+  d += `</h4>`
+  document.getElementById("calcresult").innerHTML = d;
 }
-function uinputhtml(){
-let a = parseInt(document.getElementById("uinput").value);
-let b= `Inverse input for ${a} is `
+
+function uinputhtml() {
+  let a = parseInt(document.getElementById("uinput").value);
+  let b = `<h4> Inverse input for ${a} is: </h4>`
+  let c = a
+  do {
+    b += `${c} <br>`;
+    c--;
+  }
+  while (c > 0)
+  // b+= `</h2>`
+  document.getElementById("uinputresult1").innerHTML = b;
 }
   
