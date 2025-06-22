@@ -139,7 +139,7 @@ function factorial5() {
   document.getElementById("factorialResult").innerHTML = print;
 }
 
-function calculate() {
+function calculator() {
   let a = parseInt(document.getElementById("no1").value);
   let b = parseInt(document.getElementById("no2").value);
   let c = document.getElementById("operator").value;
