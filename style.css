@@ -16,6 +16,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 body {
     background-color: #f5f7fa;
     color: #333;
@@ -111,6 +112,17 @@ button {
     white-space: nowrap;
 }
 
+ 
+  .headingstyle {
+    background-color: #0a3856 !important;
+    line-height: 42px;
+    margin: 0%;
+    padding: 5px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 2px;
+}
+
 button:hover {
     background-color: #2980b9;
     transform: translateY(-2px);
@@ -141,3 +153,9 @@ button:hover {
         width: 100%;
     }
 }
+/* .numberbutton {
+    background-color: #2980b9;
+    padding: 2;
+    margin: 40px;
+    text-align: center; */
+/* } */

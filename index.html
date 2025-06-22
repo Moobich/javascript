@@ -120,18 +120,20 @@
 </html> -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Practice Tools</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <h1 class="main-title">JavaScript Practice Tools</h1>
-        
+
         <div class="tool-card">
-            <h2>Table Generator</h2>
+            <h2><span class="headingstyle">1</span>Table Generator</h2>
             <div class="input-group">
                 <label for="number">Enter a number:</label>
                 <input type="number" id="number" placeholder="Type Your Table Number">
@@ -141,7 +143,7 @@
         </div>
 
         <div class="tool-card">
-            <h2>Radius Functions Generator</h2>
+            <h2><span class="headingstyle">2</span>Radius Functions Generator</h2>
             <div class="input-group">
                 <input type="number" id="display" placeholder="Type Your Circle Radius">
                 <button onclick="displayhtml()">Calculate</button>
@@ -150,7 +152,7 @@
         </div>
 
         <div class="tool-card">
-            <h2>Comparing Numbers</h2>
+            <h2><span class="headingstyle">3</span>Comparing Numbers</h2>
             <div class="input-group">
                 <input type="number" id="compareinput1" placeholder="Type Number 1">
                 <input type="number" id="compareinput2" placeholder="Type Number 2">
@@ -160,7 +162,7 @@
         </div>
 
         <div class="tool-card">
-            <h2>User Login</h2>
+            <h2><span class="headingstyle">4</span>User Login</h2>
             <form class="login-form">
                 <div class="form-group">
                     <label for="u1">Username</label>
@@ -175,7 +177,7 @@
         </div>
 
         <div class="tool-card">
-            <h2>Number Sign Check</h2>
+            <h2><span class="headingstyle">5</span>Number Sign Check</h2>
             <div class="input-group">
                 <input type="number" id="digitcheck" placeholder="Enter a number">
                 <button onclick="signcheck()">Check</button>
@@ -184,7 +186,7 @@
         </div>
 
         <div class="tool-card">
-            <h2>Grade Calculator</h2>
+            <h2><span class="headingstyle">6</span>Grade Calculator</h2>
             <div class="input-group">
                 <input type="number" id="obtainedmarks" placeholder="Obtained marks">
                 <input type="number" id="totalmarks" placeholder="Total marks">
@@ -194,7 +196,7 @@
         </div>
 
         <div class="tool-card">
-            <h2>Day Name Generator</h2>
+            <h2><span class="headingstyle">7</span>Day Name Generator</h2>
             <div class="input-group">
                 <input type="number" id="weekday" placeholder="Type number 1-7" min="1" max="7">
                 <button onclick="dayname()">Get Day</button>
@@ -203,7 +205,7 @@
         </div>
 
         <div class="tool-card">
-            <h2>Factorial Calculator</h2>
+            <h2><span class="headingstyle">8</span>Factorial Calculator</h2>
             <div class="input-group">
                 <button onclick="factorial5()">Calculate 5!</button>
             </div>
@@ -211,7 +213,7 @@
         </div>
 
         <div class="tool-card">
-            <h2>Basic Calculator</h2>
+            <h2><span class="headingstyle">9</span>Basic Calculator</h2>
             <div class="calculator">
                 <div class="form-group">
                     <label for="no1">First number</label>
@@ -235,7 +237,7 @@
         </div>
 
         <div class="tool-card">
-            <h2>User Input Until Zero</h2>
+            <h2><span class="headingstyle">10</span>User Input Until Zero</h2>
             <div class="input-group">
                 <input type="number" id="uinput" placeholder="Enter a number">
                 <button onclick="uinputhtml()">Start</button>
@@ -243,7 +245,13 @@
             <div id="uinputresult1" class="result-box"></div>
         </div>
     </div>
-
-    <script src="script.js"></script>
+   <div>
+    <h2>Display of Data manipulating arrays</h2>
+    <button onclick="displayarray()">Show Data</button>
+    <p id="array"></p>
+    <span class="headingstyle">1</span>
+    
+</div>
 </body>
+
 </html>

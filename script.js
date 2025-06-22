@@ -151,10 +151,10 @@ function calculator() {
     d += a - b
   }
   else if (c == "Multiply") {
-    d += a * b 
+    d += a * b
   }
   else {
-    d += (a / b).toFixed(3); 
+    d += (a / b).toFixed(3);
   }
   d += `</h4>`
   document.getElementById("calcresult").innerHTML = d;
@@ -172,4 +172,34 @@ function uinputhtml() {
   // b+= `</h2>`
   document.getElementById("uinputresult1").innerHTML = b;
 }
-  
+
+// Manipulating the arrays
+let arraydata =[
+  {Rollno: 1, name: "Ahmad", section: "Grey"},
+  {Rollno: 2, name: "Ali", section: "Brown"},
+  {Rollno: 3, name: "Abdullah", section: "Gre,y"},
+  {Rollno: 4, name: "Mohsan", section: "Brown"}
+]
+console.log(arraydata);
+
+// add new user
+arraydata.push({Rollno: 5, name: "Affan", section: "Brown"})
+console.log(arraydata);
+
+
+
+// Remove a user
+// arraydata = arraydata.filter(arraydata => arraydata.Rollno !== 3);
+// console.log(arraydata);
+
+// Finding a user by name
+// let finduser1= arraydata.find(arraydata => arraydata.name === "Mohsan");
+// console.log(finduser1);
+
+// Finding an array of all students
+let allstudents= arraydata.map(arraydata => arraydata.name.toUpperCase());
+console.log(allstudents);
+
+// Finding users on conditions
+// let sectionfinder = arraydata.find(arraydata => arraydata.section === "Brown")
+// console.log(sectionfinder);
