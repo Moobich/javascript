@@ -197,9 +197,15 @@ console.log(arraydata);
 // console.log(finduser1);
 
 // Finding an array of all students
-let allstudents= arraydata.map(arraydata => arraydata.name.toUpperCase());
-console.log(allstudents);
+// let allstudents= arraydata.map(arraydata => arraydata.name.toUpperCase());
+// console.log(allstudents);
 
 // Finding users on conditions
-// let sectionfinder = arraydata.find(arraydata => arraydata.section === "Brown")
-// console.log(sectionfinder);
+let sectionfinder = arraydata.find(arraydata => arraydata.section === "Brown")
+console.log(sectionfinder);
+
+
+
+
+
+

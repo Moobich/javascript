@@ -1,2 +1,2 @@
-arraydata = arraydata.filter(arraydata => arraydata.Rollno !== 3);
-// console.log(arraydata);
+let sectionfinder = arraydata.find(arraydata => arraydata.section === "Brown")
+console.log(sectionfinder);
