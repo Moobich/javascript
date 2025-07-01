@@ -174,22 +174,22 @@ function uinputhtml() {
 }
 
 // Manipulating the arrays
-let arraydata =[
-  {Rollno: 1, name: "Ahmad", section: "Grey"},
-  {Rollno: 2, name: "Ali", section: "Brown"},
-  {Rollno: 3, name: "Abdullah", section: "Gre,y"},
-  {Rollno: 4, name: "Mohsan", section: "Brown"}
-]
-console.log(arraydata);
+// let arraydata =[
+//   {Rollno: 1, name: "Ahmad", section: "Grey"},
+//   {Rollno: 2, name: "Ali", section: "Brown"},
+//   {Rollno: 3, name: "Abdullah", section: "Grey"},
+//   {Rollno: 4, name: "Mohsan", section: "Brown"}
+// ]
+// console.log(arraydata);
 
-// add new user
-arraydata.push({Rollno: 5, name: "Affan", section: "Brown"})
-console.log(arraydata);
+// // add new user
+// arraydata.push({Rollno: 5, name: "Affan", section: "Brown"})
+// console.log(arraydata);
 
 
 
 // Remove a user
-// arraydata = arraydata.filter(arraydata => arraydata.Rollno !== 3);
+// arraydata = arraydata.filter(arraydata => arraydata.section !== "Brown")
 // console.log(arraydata);
 
 // Finding a user by name
@@ -201,10 +201,16 @@ console.log(arraydata);
 // console.log(allstudents);
 
 // Finding users on conditions
-let sectionfinder = arraydata.find(arraydata => arraydata.section === "Brown")
-console.log(sectionfinder);
+// let sectionfinder = arraydata.find(arraydata => arraydata.section === "Brown")
+// console.log(sectionfinder);
+let arraydata =[
+  {Rollno: 1, name: "Ahmad", section: "Grey"},
+  {Rollno: 2, name: "Ali", section: "Brown"},
+  {Rollno: 3, name: "Abdullah", section: "Grey"},
+  {Rollno: 4, name: "Mohsan", section: "Brown"}
+];  
 
-
+document.getElementById("array").textContent = JSON.stringify(arraydata, null, 2);
 
 
 
