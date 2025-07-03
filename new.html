@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display Array</title>
+</head>
+<body>
+
+<pre id="output"></pre>
+
+<script>
+  let arraydata = [
+    { Rollno: 1, name: "Ahmad", section: "Grey" },
+    { Rollno: 2, name: "Ali", section: "Brown" },
+    { Rollno: 3, name: "Abdullah", section: "Grey" },
+    { Rollno: 4, name: "Mohsan", section: "Brown" }
+  ];
+
+  document.getElementById("output").textContent = JSON.stringify(arraydata, null, 2);
+</script>
+
+</body>
+</html>
